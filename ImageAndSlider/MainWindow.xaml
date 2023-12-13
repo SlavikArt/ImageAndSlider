@@ -1,0 +1,60 @@
+﻿<Window x:Class="ImageAndSlider.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageAndSlider"
+        mc:Ignorable="d"
+        Title="My Image Editor" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Image Name ="image" Grid.Row="0" Source="https://t4.ftcdn.net/jpg/02/11/25/91/360_F_211259199_n0LBMIpx3FGIsKjqQHt7g8u3pjH2i9OL.jpg"/>
+        <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Blur" Grid.Column="0"/>
+            <Slider Name="sliderBlur" Width="500" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Opacity" Grid.Column="0"/>
+            <Slider Name="sliderOpacity" Width="500" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Rotate" Grid.Column="0"/>
+            <Slider Name="sliderRotate" Width="500" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Scale" Grid.Column="0"/>
+            <Slider Name="sliderScale" Width="500" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Skew" Grid.Column="0"/>
+            <Slider Name="sliderSkew" Width="500" Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</Window>
