@@ -14,6 +14,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Image Name ="image" Grid.Row="0" Source="https://t4.ftcdn.net/jpg/02/11/25/91/360_F_211259199_n0LBMIpx3FGIsKjqQHt7g8u3pjH2i9OL.jpg"/>
         <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5">
@@ -55,6 +56,14 @@
             </Grid.ColumnDefinitions>
             <Label Content="Skew" Grid.Column="0"/>
             <Slider Name="sliderSkew" Width="500" Grid.Column="1"/>
+        </Grid>
+        <Grid Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="&lt;" Click="PreviousButtonClick" FontSize="26" FontWeight="Bold" Margin="5,0,5,0" Width="50" Height="50" Grid.Column="0"/>
+            <Button Content="&gt;" Click="NextButtonClick" FontSize="26" FontWeight="Bold" Margin="5,0,5,0" Width="50" Height="50" Grid.Column="1"/>
         </Grid>
     </Grid>
 </Window>
